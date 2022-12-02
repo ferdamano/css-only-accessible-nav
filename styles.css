@@ -17,6 +17,26 @@ nav ul li {
   padding: 0;
 }
 
-nav > ul > li { 
+nav > ul > li {
   margin: 0 0.5rem;
+}
+
+.dropdown__title {
+  background-color: transparent;
+  border: none;
+  font-family: inherit;
+}
+
+nav > ul > li a,
+nav > ul > li .dropdown__title {
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  color: blue;
+  font-size: 1.125rem;
+}
+
+nav > ul > li > a,
+nav > ul > li .dropdown__title {
+  padding: 1rem 0.5rem;
 }
