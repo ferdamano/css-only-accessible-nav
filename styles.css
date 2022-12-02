@@ -67,4 +67,10 @@ nav > ul > li .dropdown__title {
   left: 50%;
   /* Use translateX to shift the menu 50% of it's width back to the left */
   transform: translateX(-50%);
+  display: none;
+}
+
+.dropdown:hover .dropdown__menu,
+.dropdown:focus .dropdown__menu {
+  display: block;
 }
