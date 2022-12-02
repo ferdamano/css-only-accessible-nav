@@ -5,11 +5,18 @@ nav {
   place-items: center;
 }
 nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: grid;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+}
+nav > ul {
+  grid-auto-flow: column;
 }
 nav ul li {
-    padding: 0;
+  padding: 0;
+}
+
+nav > ul > li { 
+  margin: 0 0.5rem;
 }
