@@ -40,3 +40,20 @@ nav > ul > li > a,
 nav > ul > li .dropdown__title {
   padding: 1rem 0.5rem;
 }
+
+/* style up the .dropdown__menu and its links to help identify it more clearly as we work through positioning and animation: */
+.dropdown {
+  position: relative;
+}
+.dropdown .dropdown__menu {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0.15em 0.25em rgba(0, 0, 0, 0.25);
+  padding: 0.5em 0;
+  min-width: 15ch;
+}
+.dropdown .dropdown__menu a {
+  color: #444;
+  display: block;
+  padding: 0.5em;
+}
