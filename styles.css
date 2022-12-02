@@ -67,10 +67,15 @@ nav > ul > li .dropdown__title {
   left: 50%;
   /* Use translateX to shift the menu 50% of it's width back to the left */
   transform: translateX(-50%);
-  display: none;
+  transform: rotateX(-90deg) translateX(-50%);
+  transform-origin: top center;
+  opacity: 0.3;
+  transition: 280ms all ease-out;
 }
 
 .dropdown:hover .dropdown__menu,
-.dropdown:focus .dropdown__menu {
-  display: block;
+.dropdown:focus-within .dropdown__menu {
+  opacity: 1;
+  transform: rotateX(0) translateX(-50%);
+  visibility: visible;
 }
