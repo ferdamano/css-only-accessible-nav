@@ -57,3 +57,14 @@ nav > ul > li .dropdown__title {
   display: block;
   padding: 0.5em;
 }
+
+/* by adding position: absolute to the .dropdown__menu it takes it out of normal document flow */
+.dropdown__menu {
+  position: absolute;
+  top: calc(100% - 0.25rem);
+  /* centering trick */
+  /* Use the left from absolute position to shift the left side */
+  left: 50%;
+  /* Use translateX to shift the menu 50% of it's width back to the left */
+  transform: translateX(-50%);
+}
